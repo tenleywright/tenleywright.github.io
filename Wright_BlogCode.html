@@ -293,7 +293,7 @@ time  (1): Time
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="st">'2022 Att'</span>)) <span class="sc">%&gt;%</span> </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Tm, <span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>bar/line chart - Need to ask if the text and colors is too much</p>
+<p>bar/line chart</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data=</span>attendance, <span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(Tm, <span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span>), <span class="at">weight=</span> <span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span>), <span class="at">fill =</span> <span class="st">"light grey"</span>) <span class="sc">+</span></span>
@@ -327,7 +327,6 @@ time  (1): Time
 <p><img src="Wright_BlogCode_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>note: rays made the postseason (ALDS) yet placed 3rd to last in season attendance in 2022</p>
 <p>scatterplot</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
@@ -419,8 +418,6 @@ time  (1): Time
 <p><img src="Wright_BlogCode_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>notes: We know that a straight line across means there is no pattern/correlation -CLE was 6th to last in Attendance, yet finished ranked 7th in 2022 with 92 wins. Tampa Bay wasn’t far behind them on attendance or wins either. They finished third to last in attendance with an average of 13,927 fans per game.</p>
-<p>Tropicana Field is currently the smallest baseball stadium, with a capacity of only 25,000 since 2019. The ballpark is located in St.&nbsp;Petersburg, Florida, and is home to the Tampa Bay Rays. The ballpark opened in 1990 and, technically, could hold 42,735 people. They reduced the stadium’s capacity in 2019 when they decided to tarp off the upper decks. Yikes.</p>
 <p>bubble chart</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
