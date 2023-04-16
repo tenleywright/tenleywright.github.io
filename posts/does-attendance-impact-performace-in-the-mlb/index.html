@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tenley Wright">
-<meta name="dcterms.date" content="2022-04-16">
+<meta name="dcterms.date" content="2023-04-16">
 
 <title>Tenley Wright’s Blog - Does Attendance Impact Team Performance in the MLB</title>
 <style>
@@ -195,7 +195,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 16, 2022</p>
+        <p class="date">April 16, 2023</p>
       </div>
     </div>
     
@@ -213,7 +213,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>blog post goes here</p>
+<p><em>There are rich teams and there are poor teams.</em></p>
+<p><em>Then there’s 50 feet of crap.</em></p>
+<p><em>And then, finally, there’s the Oakland Athletics.</em></p>
+<p>Moneyball is one of my favorite movies, and one of the themes it explores is the key components to drawing fans to games, and how to keep them coming back for more. It’s been over twenty years since Billy Beane and his front office staff tried to dig their way out of the issues in Oakland and yet somehow, after all these years, the A’s still remain underneath that same 50 feet of crap.</p>
+<p>If you want to make a case for the A’s you could argue that perhaps it’s the fact that their comically oversized coliseum sits in one of the largest metropolitan areas in the country, yet one that is home to two baseball teams, making it the lowest population supporting two teams. However, even if you split the entire Bay Area into two halves, you still end up with a larger market than Pittsburgh, Tampa and KC.</p>
+<p>So, is there a connection between ballpark attendance and a team’s performance? Does a winning team draw larger crowds? Can a packed house fuel a successful season? To answer that, we’ll first need to explore how each team compares to the league average attendance, as well as each other.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -283,7 +288,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">25</span>, <span class="at">y=</span><span class="dv">3390000</span>, <span class="at">label=</span><span class="st">"Houston won the world series"</span>), <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">15</span>, <span class="at">y=</span><span class="dv">3050000</span>, <span class="at">label=</span><span class="st">"Philly made it to the world series"</span>), <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">6</span>, <span class="at">y=</span><span class="dv">2500000</span>, <span class="at">label=</span><span class="st">"Cleveland won 92 games and finished 7th overall"</span>), <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="st">"NYM"</span>, <span class="at">y=</span><span class="dv">2860000</span>, <span class="at">label=</span><span class="st">"&lt;&lt;League Average Attendance"</span>), <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="st">"NYM"</span>, <span class="at">y=</span><span class="dv">2890000</span>, <span class="at">label=</span><span class="st">"&lt;&lt;League Average Attendance"</span>), <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">2151889</span>, <span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span> </span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels=</span>comma)<span class="sc">+</span></span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()<span class="sc">+</span></span>
@@ -296,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
 <span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">17</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>), </span>
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y=</span><span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>), </span>
@@ -308,7 +313,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>more blog post here</p>
+<p>I wanted to explore the correlation between attendance and wins. It would appear that there are two opposite ends of the spectrum. On one hand, you have the aforementioned A’s, who in 2022 had the lowest attendance in the MLB and fittingly came dead last in the standings. On the other hand, you get the Los Angeles Dodgers, who had the highest attendance and (you guessed it) the most wins.</p>
+<p>But what’s between those two extremes?</p>
+<p>What’s interesting, is that between these two ends of the spectrum, there is little to no evidence of a correlation between wins and attendance. Sure, Houston had an above average attendance and even went on to win the World Series, but the Phillies were right there with them till the end with a middle of the road average attendance. Even further, Cleveland was sixth to last in Attendance, yet finished ranked 7th in 2022 with 92 wins.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -399,7 +406,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>more blog post here</p>
+<p>There are a number of factors that drive attendance at MLB ballparks. And the same is true for winning. I took my question one step further and tried to find a common theme between the teams that had high attendance and a high win percentage. Same for the teams on the low side of things. That common theme? Payroll.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -466,7 +473,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>     <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span> </span>
 <span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(</span>
 <span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>  <span class="at">data=</span>HOU, </span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span><span class="sc">-</span><span class="dv">500</span>, <span class="at">y=</span>W<span class="sc">+</span><span class="dv">2</span>, <span class="at">label=</span>Tm))<span class="sc">+</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span><span class="sc">-</span><span class="dv">5000</span>, <span class="at">y=</span>W<span class="sc">+</span><span class="dv">2</span>, <span class="at">label=</span>Tm))<span class="sc">+</span></span>
 <span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>     <span class="fu">geom_point</span>(</span>
 <span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">data=</span>PHI, </span>
 <span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">2022 Att</span><span class="st">`</span>, <span class="at">y=</span>W, <span class="at">size=</span> <span class="st">`</span><span class="at">Est. Payroll</span><span class="st">`</span>),</span>
@@ -500,7 +507,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
 <span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">19</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
 <span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>), </span>
 <span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">11</span>), </span>
 <span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
@@ -512,7 +519,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>more blog post here</p>
+<p>Billy Beane may have known how to find the best bargain deal on a shortstop, but when it comes down to it, the big bucks are winning on both sides of the fence.</p>
+<p>It’s important to note, though, that correlation does not always equal causation. Just because there is a positive correlation between payroll and wins and attendance, it doesn’t necessarily mean that an increased payroll will automatically lead to more victories.</p>
 
 
 
