@@ -9,7 +9,7 @@
 <meta name="author" content="Tenley Wright">
 <meta name="dcterms.date" content="2023-04-16">
 
-<title>Tenley Wright’s Blog - Does Attendance Impact Team Performance in the MLB?</title>
+<title>Tenley Wright’s Blog - Is There a Relationship Between Attendance and Team Performance in the MLB?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -173,7 +173,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Does Attendance Impact Team Performance in the MLB?</h1>
+      <h1 class="title">Is There a Relationship Between Attendance and Team Performance in the MLB?</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Baseball</div>
                 <div class="quarto-category">Code</div>
@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><em>And then, finally, there’s the Oakland Athletics.</em></p>
 <p>Moneyball is one of my favorite movies, and one of the themes it explores is the key components to drawing fans to games, and how to keep them coming back for more. It’s been over twenty years since Billy Beane and his front office staff tried to dig their way out of the issues in Oakland and yet somehow, after all these years, the A’s still remain underneath that same 50 feet of crap.</p>
 <p>If you want to make a case for the A’s you could argue that perhaps it’s the fact that their comically oversized coliseum sits in one of the largest metropolitan areas in the country, yet one that is home to two baseball teams, making it the lowest population supporting two teams. However, even if you split the entire Bay Area into two halves, you still end up with a larger market than Pittsburgh, Tampa and KC.</p>
-<p>So, is there a connection between ballpark attendance and a team’s performance? Does a winning team draw larger crowds? Can a packed house fuel a successful season? To answer that, we’ll first need to explore how each team compares to the league average attendance, as well as each other.</p>
+<p>So, is there a connection between ballpark attendance and a team’s performance? To answer that, we’ll first need to explore how each team compares to the league average attendance, as well as each other.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -295,8 +295,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Team"</span>, </span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Season Attendance"</span>, </span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"2022 MLB Average Attendance vs Individual Team Attendance"</span>, </span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"How MLB an teams 2022 season attendance compares to the league average."</span>, </span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"What Stands Out About 2022 MLB Attendance"</span>, </span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"How MLB an teams 2022 attendance compares to the league average."</span>, </span>
 <span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Baseball Reference | By Tenley Wright"</span></span>
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
@@ -314,8 +314,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>I wanted to explore the correlation between attendance and wins. It would appear that there are two opposite ends of the spectrum. On one hand, you have the aforementioned A’s, who in 2022 had the lowest attendance in the MLB and finished second to last in the standings. On the other hand, you get the Los Angeles Dodgers, who had the highest attendance and the most wins.</p>
-<p>But what’s between those two extremes?</p>
-<p>What’s interesting, is that with the teams sandwiched in the middle, there is little to no evidence of a correlation between wins and attendance. Sure, Houston had an above average attendance and even went on to win the World Series, but the Phillies were right there with them till the end with a middle of the road season attendance. Even further, Cleveland was sixth to last in attendance, yet finished ranked 7th in 2022 with 92 wins.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -389,8 +387,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Season Attendance"</span>, </span>
 <span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Wins"</span>, </span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"The impact of Attendance on Performace in MLB"</span>, </span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Attendance had little effect on a teams ability to win games."</span>, </span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Fans Love to Watch a Winning Team"</span>, </span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Wins account for a 46 percent change in attendance and vice versa."</span>, </span>
 <span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Baseball Reference | By Tenley Wright"</span></span>
 <span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
@@ -406,6 +404,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>It’s important to note, though, that correlation does not equal causation. Just because there is a positive correlation between wins and attendance, it doesn’t necessarily mean that an increased attendance will automatically lead to more victories and vice versa. The Rays and Guardians are prime examples of this.</p>
 <p>There are a number of factors that drive attendance at MLB ballparks. And the same is true for winning. I took my question one step further and tried to find a common theme between the teams that had high attendance and a high win percentage. Same for the teams on the low side of things. That common theme? Payroll.</p>
 <div class="cell">
 <details>
@@ -501,13 +500,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Season Attendance"</span>, </span>
 <span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Wins"</span>, </span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"The impact of Payroll on Attendance and Performance"</span>, </span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Payroll has a Positive Impact of Attendance and Performance"</span>, </span>
 <span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"In 2022, teams with a higher payroll were winning more games and drawing more fans to their ballpark."</span>, </span>
 <span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Baseball Reference | By Tenley Wright"</span></span>
 <span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
 <span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">19</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">17</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
 <span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">14</span>), </span>
 <span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">11</span>), </span>
 <span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
@@ -519,8 +518,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Billy Beane may have known how to find the best bargain deal on a shortstop, but when it comes down to it, the big bucks are winning on both sides of the fence.</p>
-<p>It’s important to note, though, that correlation does not always equal causation. Just because there is a positive correlation between payroll, wins and attendance, it doesn’t necessarily mean that an increased payroll will automatically lead to more victories.</p>
+<p>Billy Beane may have known how to find the best bargain deal on a shortstop, but when it comes down to it, the big bucks are winning on both sides of the fence. Small market teams like Oakland have and will continue to remain small market teams because they can’t afford to improve on things like player development systems, management and coaching staff. This, in turn affects their attendance.</p>
 
 
 
