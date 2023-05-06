@@ -213,7 +213,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>In 2013 my brother was diagnosed with a terrible mental disorder called being a Red Sox fan and at the time wasn’t too fond of letting me watch the games with him. As a result, I became a Yankees fan in perhaps the most New York way possible…</p>
+<p>In 2013 my brother was diagnosed with a terrible mental disorder called being a Red Sox fan. At the time, he wasn’t too fond of letting me watch the games with him. As a result, I became a Yankees fan in perhaps the most New York way possible…</p>
 <p>Out of spite.</p>
 <p>In the early years of my fandom, there was a contagious buzz about the ‘Chase for 28’ and the Yank’s pursuit of another Commissioner’s Trophy. I had seen just about every documentary, video clip and newspaper article available on the 2009 championship team and was convinced that it wouldn’t be long before the Yankees would once again be World Series Champions.</p>
 <p>What I didn’t know, though, was that the 2009 championship would mark the beginning of perhaps the worst World Series drought in franchise history. It’s been 13 years since the Yankees have reached the World Series and in that time 15 of the other 29 teams have made an appearance in the Fall Classic. There’s been years where the team has displayed legitimate championship potential, just to fall short in the Championship Series, continuing the seemingly endless cycle of disappointment that has plagued the Yankees fan base for over a decade.</p>
@@ -330,13 +330,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">data=</span>NY2009, </span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span>ERA, <span class="at">y=</span>BAVG, <span class="at">size=</span> <span class="st">`</span><span class="at">W</span><span class="st">`</span>), </span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">color=</span> <span class="st">"#EFB21E"</span>,</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>     <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>     <span class="at">alpha=</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">data=</span>NY2019, </span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span>ERA, <span class="at">y=</span>BAVG, <span class="at">size=</span> <span class="st">`</span><span class="at">W</span><span class="st">`</span>), </span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">color=</span> <span class="st">"#003087"</span>,</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>     <span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>     <span class="at">alpha=</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Earned Run Average (ERA)"</span>, </span>
@@ -361,7 +361,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>But just like the ’09 championship team, they struggled with pitching. The 2019 Yankees had the worst Earned Run Average out of all the drought teams and walked the 2nd highest number of batters. When comparing the championship team to the drought team, 2009 finished with the 2nd highest ERA and walked the most batters.</p>
 <p>Major league baseball has changed a lot since 2009, though. A quality pitching staff in the 2000s could put more balls in play and runners on base but rely on a good fielding defense to back them up and a good offense to provide the insurance. And that’s what the 2009 Yankees had.</p>
-<p>In 2019, however, pitching had already transitioned into a much more important role. Instead of fielding, Pitchers became the first line of defense when it came to preventing runners from getting on base and scoring. Fewer balls were being put into play and strikeout rates were on the rise. The Yankees failed to transition into the new era. This became especially clear during the 2019 American League Championship Series, where the Yankees seemed to fall apart at the hands of the Houston Astros.</p>
+<p>In 2019, however, pitching had already transitioned into a much more important role. Instead of fielding, pitchers became the first line of defense when it came to preventing runners from getting on base and scoring. Fewer balls were being put into play and strikeout rates were on the rise. The Yankees failed to transition into the new era. This became especially clear during the 2019 American League Championship Series, where the Yankees seemed to fall apart at the hands of the Houston Astros.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -373,7 +373,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        )<span class="sc">+</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Where the Yankees Fell Short, Houston Excelled"</span>, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Houston Led the League in"</span> <span class="sc">~</span> <span class="fu">bold</span>(<span class="st">"Win Probability Added by Pitchers,"</span>)<span class="sc">~</span><span class="st">"Yankees Couldn't Compete."</span>, </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Houston led the league in"</span> <span class="sc">~</span> <span class="fu">bold</span>(<span class="st">"Win Probability Added by Pitchers,"</span>)<span class="sc">~</span><span class="st">"Yankees couldn't compete."</span>, </span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Baseball Reference | By Tenley Wright"</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
@@ -403,7 +403,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        )<span class="sc">+</span></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"The Yankees Never Stood a Chance Against Houston"</span>, </span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Astros Pitching Dominated the League in"</span> <span class="sc">~</span> <span class="fu">bold</span>(<span class="st">"Runs Saved with Runners on Base."</span>)<span class="sc">~</span><span class="st">""</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Astros pitching dominated the league in"</span> <span class="sc">~</span> <span class="fu">bold</span>(<span class="st">"Runs Saved with Runners on Base."</span>)<span class="sc">~</span><span class="st">""</span>,</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Baseball Reference | By Tenley Wright"</span></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>     )<span class="sc">+</span></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
